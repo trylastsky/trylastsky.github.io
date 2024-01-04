@@ -17,7 +17,7 @@ let lastTime = 0;
 // let resultNano = 0;
 //bool
 let gameWin = false;
-let gameOver = false;
+let gameOver = true;
 // let gameWin = false;
 //audio
 const win = new Audio();
@@ -91,7 +91,6 @@ class Raven {
             }
         }
         if (this.x < 0 - this.width) gameOver = true;
-        if (score === 500) this.delete;
     }
     draw() {
         collisionCtx.fillStyle = this.color;
@@ -217,8 +216,10 @@ function drawGameOver() {
     ctx.fillStyle = "black";
     ctx.fillText("GAME OVER", canvas.width / 2, canvas.height / 2);
     ctx.fillText("Score: " + score, canvas.width / 2, canvas.height / 1.75);
+    ctx.fillText("click for restart", canvas.width/9 - 4, canvas.height/20 - 2);
     ctx.fillStyle = "white";
     ctx.fillText("GAME OVER", canvas.width / 2 - 5, canvas.height / 2 + 5);
+    ctx.fillText("click for restart", canvas.width/9, canvas.height/20);
     ctx.fillText(
         "Score: " + score,
         canvas.width / 2 - 3,
@@ -233,9 +234,11 @@ function drawWin() {
         ctx.fillStyle = 'black';
         ctx.fillText('YOU WIN!!!', canvas.width/2, canvas.height/2);
         ctx.fillText('Score: ' + score, canvas.width/2, canvas.height/1.75);
+        ctx.fillText("click for restart", canvas.width/9 - 4, canvas.height/20 - 2);
         ctx.fillStyle = 'white';
         ctx.fillText('YOU WIN!!!', canvas.width/2 - 5, canvas.height/2 + 5);
         ctx.fillText('Score: ' + score, canvas.width/2 - 3, canvas.height/1.75 + 3);
+        ctx.fillText("click for restart", canvas.width/9, canvas.height/20);
     }
 }
 
