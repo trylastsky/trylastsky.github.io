@@ -1,5 +1,4 @@
 body {
-    background-image: url(/img/forest.png);
     width: 100vh;
     height: 100vh;
     overflow: hidden;
@@ -15,5 +14,11 @@ canvas {
 
 #collisionCanvas {
     opacity: 0;
+}
+
+#restart {
+    opacity: 1;
+    color: aqua;
+    width: 50px;
 }
 
