@@ -1,5 +1,5 @@
 body {
-    background: url(./img/forest.png);
+    background: url(/img/forest.png);
     width: 100vh;
     height: 100vh;
     overflow: hidden;
