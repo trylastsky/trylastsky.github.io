@@ -10,7 +10,7 @@ canvas.height = window.innerHeight;
 collisionCanvas.width = window.innerWidth;
 collisionCanvas.height = window.innerHeight;
 //uint
-let score = 299;
+let score = 0;
 let timeToNextRaven = 0;
 let ravenInterval = 500;
 let lastTime = 0;
