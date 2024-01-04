@@ -17,7 +17,7 @@ let lastTime = 0;
 // let resultNano = 0;
 //bool
 let gameWin = false;
-let gameOver = true;
+let gameOver = false;
 // let gameWin = false;
 //audio
 const win = new Audio();
